@@ -9,12 +9,12 @@ let qNum = 1;
 
 
 function setup() {
-  new Canvas('window');
+  new Canvas('2:1');
   
   world.gravity.y = 10;
   
   
-  
+  // Questions
   question = new Sprite();
   question.textSize = 40;
   question.text = "Question 0";
@@ -22,6 +22,7 @@ function setup() {
   question.y = 40;
   question.collider = 'static';
   
+  // True Button
   option1 = new Sprite();
   option1.textSize = 20;
   option1.text = "True"
@@ -29,25 +30,29 @@ function setup() {
   option1.y = 345;
   option1.collider = 'static';
   
+  // False Button
   option2 = new Sprite();
   option2.textSize = 20;
-  option2.text = "Flase"
+  option2.text = "False"
   option2.x = 500;
   option2.y = 345;
   option2.collider = 'static';
 
-  
+
+  // Player
   player = new Sprite();
-  player.x = 50;
+  player.x = 800;
   player.text = "player";
-  
+
+  // Enemy
   wizard = new Sprite();
-  wizard.x = 600;
+  wizard.x = 2000;
   wizard.text = "Evil Wizard"
-  
+
+  // Flooring
   floor = new Sprite();
-  floor.y = 300;
-  floor.w = 900;
+  floor.y = 700;
+  floor.w = 2120;
   floor.h = 20;
   floor.collider = 'static';
   
