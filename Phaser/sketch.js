@@ -65,8 +65,7 @@ function draw() {
 
   
   if (qNum == 1) {
-    question.text = "Question 1";
-
+    question.text = "Question" + qNum;
   }
 
 }
